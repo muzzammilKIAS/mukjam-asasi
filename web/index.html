@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mukjam Asasi</title>
+  <meta name="description" content="المعجم العربي الأساسي — cari kata masukan dan akar, baca takrif, buka imbasan asal.">
+  <meta name="theme-color" content="#F3EADA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F2239" media="(prefers-color-scheme: dark)">
+  <meta name="author" content="Shairazi Mohamad, Muzzammil Najib">
+  <meta property="og:title" content="Mukjam Asasi — المعجم العربي الأساسي">
+  <meta property="og:description" content="Kamus Arab–Arab: 3,500+ akar dan 24,000+ kata masukan. Cari kata atau akar, baca takrif, buka imbasan asal.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23A6321C'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='serif' font-size='40' fill='%23FFFDF8'%3E%D9%85%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Langkau ke kandungan</a>
+
+  <header class="hdr">
+    <div class="hdr-in">
+      <a class="mark" href="#" aria-label="Mukjam Asasi — laman utama">
+        <span class="mark-ar" lang="ar">المعجم الأساسي</span>
+        <span class="mark-lat">Mukjam Asasi</span>
+      </a>
+      <div class="search" role="search">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" dir="rtl" lang="ar" autocomplete="off" spellcheck="false"
+               placeholder="ابحث عن كلمة أو جذر" aria-label="Cari kata masukan atau akar (Arab)">
+        <kbd class="kbd-hint" aria-hidden="true">/</kbd>
+        <button class="ibtn" id="kbBtn" type="button" aria-label="Papan kekunci Arab" aria-pressed="false" title="Papan kekunci Arab">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6.5 10h.01M10 10h.01M14 10h.01M17.5 10h.01M8 14h8"/></svg>
+        </button>
+      </div>
+      <nav class="hdr-act" aria-label="Pautan">
+        <a href="#simpan" class="hdr-link" id="savedLink">Simpanan <span class="n" id="savedN"></span></a>
+        <button class="ibtn" id="themeBtn" type="button" aria-label="Tukar tema"></button>
+      </nav>
+    </div>
+    <div class="kb" id="kb" hidden></div>
+    <nav class="strip" id="strip" aria-label="Indeks huruf"></nav>
+  </header>
+
+  <nav class="thumbs" id="thumbs" aria-label="Indeks huruf"></nav>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="foot">
+    <svg class="foot-orn" viewBox="0 0 56 56" aria-hidden="true"><path d="M28 4 34 22 52 28 34 34 28 52 22 34 4 28 22 22Z"/><circle cx="28" cy="28" r="9"/></svg>
+    <p class="foot-ar" lang="ar">المعجم العربي الأساسي للناطقين بالعربية ومتعلميها</p>
+    <p class="foot-src">Teks asal © Larousse, 1989, dengan tugasan ALECSO</p>
+    <p class="foot-org" lang="ar">المنظمة العربية للتربية والثقافة والعلوم</p>
+    <p class="foot-own">Edisi digital © 2026 <b>Shairazi Mohamad</b> &amp; <b>Muzzammil Najib</b></p>
+    <p class="foot-note">Teks dibaca semula daripada imbasan asal dan disemak halaman demi halaman. Setiap entri dipautkan ke halaman imbasan untuk semakan.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/kamus.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

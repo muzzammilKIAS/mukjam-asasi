@@ -1,0 +1,6 @@
+# PDF kamus lain dan salinan asal di akar projek
+/*.pdf
+# OCR lama (Apple Vision) — mentah, besar
+ocr_vision/
+.DS_Store
+node_modules/
